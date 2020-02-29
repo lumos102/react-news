@@ -1,17 +1,17 @@
-function car (state = [], { type, payload }) {
+function shopCar (state = [], { type, payload }) {
   switch(type) {
-    case 'init':
+    case 'FETCH_PRODUCT':
       return [...payload]
-    case 'update':
-      let newState = state.map(e => {
-        if (e.id === payload.id) {
+    case 'UPDATE':
+      let newState = state.map(item => {
+        if (item.id === payload.id) {
           let obj = {
-            ...e,
+            ...item,
             ...payload
           }
           return obj
         } else {
-          return e
+          return item
         }
       })
       return [...newState]
@@ -20,4 +20,4 @@ function car (state = [], { type, payload }) {
   }
 }
 
-export default car
+export default shopCar

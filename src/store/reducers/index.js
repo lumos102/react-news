@@ -1,5 +1,5 @@
 import { combineReducers } from 'redux'
-import car from './car.js'
-let reducers = combineReducers({car})
+import shopCar from './car.js'
+let reducers = combineReducers({shopCar})
 
 export default reducers
