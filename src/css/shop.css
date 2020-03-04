@@ -8,6 +8,11 @@
   border-radius: 8px;
 }
 
+.shop-cart-container {
+  display: flex;
+  flex-direction: column;
+}
+
 .shop-item-detail {
   height: 160px;
   border-radius: 8px;
@@ -21,7 +26,7 @@
 }
 
 .shop-item-img {
-  width: 32%;
+  width: 100px;
   float: left;
 }
 .shop-item-img img {

@@ -22,7 +22,6 @@ class List extends React.Component {
       totalPrice = totalPrice + this.props.shopCar[n].num * this.props.shopCar[n].price
       n += 1
     }
-    console.log(totalPrice)
     return totalPrice
   }
 
@@ -33,7 +32,7 @@ class List extends React.Component {
           {/* 您当前选中{}件商品 */}
           您当前选中{}件商品，购物需谨慎嗷！
         </div>
-        <div className="shop-cart-list">
+        <div className="shop-cart-container">
           { this.props.shopCar.map((item) => (
             <ListItem currentItem={item} key={item.id}></ListItem>
           )) }
