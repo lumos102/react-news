@@ -1,0 +1,166 @@
+.box {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 100%;
+  height: 160px;
+  margin-bottom: 20px;
+}
+
+.box1 {
+  display: flex;
+}
+
+.box2 {
+  display: flex;
+  justify-content: center;
+}
+
+.box3 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.box4 {
+  display: flex;
+  align-items: center;
+}
+
+.box5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box6 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.box7 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.box8 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box9 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.box12 {
+  display: flex;
+}
+.box12 .item:nth-child(2) {
+  align-self: center;
+}
+
+.box13 {
+  display: flex;
+  justify-content: space-between;
+}
+.box13 .item:nth-child(2) {
+  align-self: flex-end;
+}
+
+.box14 {
+  display: flex;
+  justify-content: space-between;
+}
+.box14 .item:nth-child(2) {
+  align-self: center;
+}
+.box14 .item:nth-child(3) {
+  align-self: flex-end;
+}
+
+.box15 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: space-between;
+}
+
+.box16 {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.box16 .column {
+  flex-basis: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box17 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.box18 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.grid {
+  display: flex;
+}
+.grid-cell {
+  flex: 1;
+}
+.u-grid {
+  flex: 0 0 80%;
+}
+
+.web-container {
+  display: flex;
+  flex-direction: column;
+}
+.web-header {
+  flex: 1
+}
+.web-footer {
+  flex: 1
+}
+.web-body {
+  /* flex: 0 0 80%; */
+  flex: 1;
+  display: flex;
+}
+.web-content {
+  /* flex: 60%; */
+  flex: 1;
+}
+.web-nav {
+  flex: 0 0 20px;
+  order: -1;
+}
+.web-aside {
+  flex: 0 0 20px;
+}
+.border {
+  border: 1px solid red;
+}

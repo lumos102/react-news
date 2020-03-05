@@ -3,6 +3,7 @@ import './App.css';
 import Comment from './page/comment/Comment.js'
 import Login from './page/login/Login.js'
 import Shop from './page/shop/List.js'
+import Flex from './page/flex/Flex.js'
 import Scroll from './page/scroll/Scroll'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
@@ -16,7 +17,8 @@ function App() {
         </Route>
         <Route path="/comment" component={Comment}></Route>
         <Route path="/shop" component={Shop} ></Route>
-        <Route path="/" component={Shop}></Route>
+        <Route path="/flex" component={Flex} ></Route>
+        <Route path="/" component={Flex}></Route>
       </Switch>
     </BrowserRouter>
   )
