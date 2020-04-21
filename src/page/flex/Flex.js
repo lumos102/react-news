@@ -2,9 +2,34 @@ import React from 'react'
 import '../../css/flex.css'
 
 class Flex extends React.Component {
+  componentDidMount () {
+    this.addLog(this.add, 1, 2)()
+  }
+
+  add (a, b) {
+    return a + b
+  }
+
+  // 高阶函数
+  addLog (fn, a, b) {
+    function wrapper () {
+      console.log(fn(a, b))
+      return fn(a, b)
+    }
+    return wrapper
+  }
+
   render () {
     return (
       <div>
+        <div className="box page-container">
+          <div className="page-header border"></div>
+          <div className="page-content-wrap border">
+            <div class="page-leftbar border"></div>
+            <div className="page-content border"></div>
+          </div>
+          <div className="page-footer border"></div>
+        </div>
         {/* 单项目 */}
         {/* 上方 居左 */}
         <div className="box box1">

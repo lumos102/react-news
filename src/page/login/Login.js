@@ -39,10 +39,15 @@ class Login extends React.Component {
     event.preventDefault()
   }
 
+  // 点击头部不失去输入框焦点
+  handleHeadClick (event) {
+    event.preventDefault()
+  }
+
   render () {
     return (
       <div className="login-page">
-        <Header></Header>
+        <Header event={(event) => this.handleHeadClick(event)}></Header>
         <div className="login-page-content">
           <form onSubmit={(event)=>this.handleFormSubmit(event)}>
             <input value={this.state.form.account || ''}

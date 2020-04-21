@@ -164,3 +164,26 @@
 .border {
   border: 1px solid red;
 }
+
+.page-container {
+  display: flex;
+  flex-direction: column;
+}
+.page-header {
+  flex: 1;
+}
+.page-footer {
+  flex: 1;
+}
+.page-content-wrap {
+  flex: 0 0 90%;
+  display: flex;
+  flex-direction: row;
+}
+
+.page-leftbar {
+  flex: 0 0 30%;
+}
+.page-content {
+  flex: 0 0 70%;
+}
