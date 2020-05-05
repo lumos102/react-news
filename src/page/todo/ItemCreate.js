@@ -21,7 +21,6 @@ export default class ItemCreate extends Component {
             data-seed="logId"
             autoHeight
             value={this.state.form.title}
-            ref={el => this.customFocusInst = el}
           />
           {/* 聚焦 */}
           {/* <List.Item>
@@ -48,10 +47,19 @@ export default class ItemCreate extends Component {
   // 提交
   submit () {
     // 提交请求
-    createTodoItem(this.form).then(res => {
-      console.log(res)
+    // console.log(console.log(this.form))
+    let params = Object.assign({}, this.form, {
+      id: 1,
+      title: 'This is title',
+      thumb: 'https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg',
+      extra: 'this is extra',
+      body: 'This is content of `Card`',
+      footer: 'extra footer content'
     })
-    console.log(this.state.form)
+    createTodoItem(params).then(res => {
+      // console.log(res)
+    })
+    // console.log(this.state.form)
     // 回调：返回上一页
   }
 }

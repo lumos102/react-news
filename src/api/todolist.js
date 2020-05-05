@@ -1,12 +1,11 @@
 import http from './index'
+import qs from 'qs'
 
 // 查询列表
 export function fetchTodoList (params) {
   return http({
     url: '/todo/query',
-    method: 'get',
-    params
-    // mode:"no-cors" //跨域
+    method: 'get'
   })
 }
 
@@ -15,7 +14,7 @@ export function createTodoItem (params) {
   return http({
     url: '/todo/create',
     method: 'post',
-    params
-    // mode:"no-cors" //跨域
+    data: params
+    // data: qs.stringify(params)
   })
 }

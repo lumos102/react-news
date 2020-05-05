@@ -11,7 +11,7 @@ class List extends React.Component {
     this.state = {
       todoList: [
         {
-          key: '1',
+          id: '1',
           title: 'This is title',
           thumb: 'https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg',
           extra: 'this is extra',
@@ -19,7 +19,7 @@ class List extends React.Component {
           footer: 'extra footer content'
         },
         {
-          key: '2',
+          id: '2',
           title: 'This is title',
           thumb: 'https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg',
           extra: 'this is extra',
@@ -34,7 +34,7 @@ class List extends React.Component {
     return (
     <div>
       {this.state.todoList.map(item =>
-        <ListItem key={item.key} todoList={item}></ListItem>
+        <ListItem key={item.id} todoList={item}></ListItem>
       )}
       <div className="list-create-btn">
         <Link to="/todo-list/create"><Icon type="check-circle" /></Link>

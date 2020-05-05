@@ -4,7 +4,7 @@ import axios from 'axios'
 
 // 创建axios实例
 let instance = axios.create({
-  baseURL: 'http://192.168.1.3:8080/',
+  // baseURL: 'http://192.168.1.3:8080/',
   timeout: 60000
 })
 // axios.defaults.baseURL = "http://192.168.1.3:8080/";
