@@ -49,7 +49,7 @@ export default class ItemCreate extends Component {
     // 提交请求
     // console.log(console.log(this.form))
     let params = Object.assign({}, this.form, {
-      id: 1,
+      // id: 1,
       title: 'This is title',
       thumb: 'https://gw.alipayobjects.com/zos/rmsportal/MRhHctKOineMbKAZslML.jpg',
       extra: 'this is extra',
